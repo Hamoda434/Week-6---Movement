@@ -12,6 +12,7 @@ public class MoveObjectRB03 : MonoBehaviour
         moveDirection = new Vector3(-5, 0, 0); // Don't change this!
         rigidbody = GetComponent<Rigidbody>();
     }
+    //Decreased mass of cube.
 
     // Update is called once per frame
     void Update()

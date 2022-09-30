@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveObjectRB04 : MonoBehaviour
 {
     Rigidbody rigidbody;
-    Vector3 moveDirection;
+    [SerializeField] Vector3 moveDirection; //added the ability to input moveDirection
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +18,10 @@ public class MoveObjectRB04 : MonoBehaviour
 
         // I just want to give a nudge to the blue cube, but 
 	    // stay on the white plane and not fall over the edge myself...
+
+	    //Changed Drag to 1.5
+
+
     }
 
     // Update is called once per frame

@@ -5,14 +5,14 @@ using UnityEngine;
 public class MoveObjectRB05 : MonoBehaviour
 {
     Rigidbody rigidbody;
-    Vector3 moveDirection;
+    [SerializeField] Vector3 moveDirection;  //added the ability to input moveDirection
     // Start is called before the first frame update
     void Start()
     {
         moveDirection = new Vector3(-2, 0,0); // Don't change this!
         rigidbody = GetComponent<Rigidbody>();
     }
-
+    //Unchecked isKinematic
     // Update is called once per frame
     void Update()
     {
